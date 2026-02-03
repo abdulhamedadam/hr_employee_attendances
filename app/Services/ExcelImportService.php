@@ -94,8 +94,8 @@ class ExcelImportService
                         continue;
                     }
 
-                    $date = $this->parseDate($row[0]);
-                    $employeeCode = trim($row[1]);
+                    $employeeCode = trim($row[0]);
+                    $date = $this->parseDate($row[1]);
                     $time = $this->parseTime($row[2]);
                     $notes = isset($row[3]) ? trim($row[3]) : null;
 
